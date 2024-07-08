@@ -12,7 +12,7 @@ pipeline {
             steps {
                 echo "Building.."
                 sh '''
-                echo "Building your app"
+                flutter build apk --release
                 '''
             }
         }
