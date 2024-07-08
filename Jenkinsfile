@@ -1,8 +1,8 @@
 pipeline {
     agent { 
-        node {
-            label '!built-in'
-            }
+        
+        label 'built-in'
+       
       }
     triggers {
         pollSCM '* * * * *'
