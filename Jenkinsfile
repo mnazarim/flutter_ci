@@ -12,9 +12,9 @@ pipeline {
             steps {
                 echo "Building.."
                 sh '''#!/bin/bash
-                source ~/.profile
-                ls -ltrh
-                flutter build apk --release
+                        source ~/.profile
+                        ls -ltrh
+                        flutter build apk --release
                 '''
             }
         }
