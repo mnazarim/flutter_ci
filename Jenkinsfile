@@ -11,7 +11,7 @@ pipeline {
         stage('Build') {
             steps {
                 echo "Building.."
-                sh '''
+                sh '''#!/bin/bash
                 source ~/.profile
                 ls -ltrh
                 flutter build apk --release
